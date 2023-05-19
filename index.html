@@ -8,6 +8,12 @@
 			margin: 0;
 			padding: 0;
 		}
+		.profile{
+				display: flex;
+				gap: 3rem;
+				padding: 4rem;
+				justify-content: space-around;
+		}
 		header {
 			background-color: #333;
 			color: #fff;
@@ -117,6 +123,44 @@
 		.skill-image:hover {
 			transform: scale(1.2);
 		}
+        /* Added CSS for skills section */
+		.skills {
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+		}
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills li {
+            margin: 10px;
+            /* padding: 5px 10px; */
+			/* padding-right: 2rem; */
+			/* padding-top: 1rem; */
+			padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .skills h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.skills h5{
+	padding-right: 3rem;
+}
+.skills h3 {
+    font-size: 1.2em;
+}
+
+.skills h5 {
+    font-size: 1em;
+}
 	</style>
 </head>
 <body>
@@ -131,13 +175,20 @@
 		<a href="#cv">CV</a>
         <a href="#contact">Contact</a>
 	</nav>
-	<section id="profile">
-		<h2>Profile</h2>
-		<img src="https://lh3.googleusercontent.com/wu1nePcmIY77-Kw_W32Laf-dCCdSUKNwfS-R97qLGuIdk7zmopxRHXBdIqZcf6gjn9nfmDZ-_8rgjRObHgNcJ-t-f9jHzXqeFwvl-rMp5r01jXABCidyU4bOWhF0OqKvNocugLnQw_y4s_BiBPikiJK43Rzm9rRSKHSr0b97gA-8z-ikQYwx70MoAXmR4u-acpYiYn0EM_PP45O-biJm9laP6-tHfmRv01uG4Ah8MtzuIAU5w4ECaOaeMxGMLoiMcPN9gq1wR1O7MdttuQTZf7Z3J0zNQrNQksKtMMqq1DjI4tBYQJetYCAh2kTDUTx4w6zHpLWMClFqPRTCsAfTsA6iLv4lyUd7zL-R9SAd4fL_8ixwSBdh6TRQ52EqFci5pN8OUEfC0ZeGlWCAwxE4OdV5LKc_4JuihU5OP4e2lPqFtVMEyzAJtRHhvk9Bs8SOoFteX_YGadEPIVQMBaGHIu_R8yrzVOS1BjdMKRfuMS3lPjDSktMWVkWPbWeeL4XW2yJyTgKDS1HcDhCSuO6B2SlmTGzeiBNKV0LRIpYdHVx1H7PW95bhsPmAMXcjl4Tn7h4JPNDL7NjZU8w44QXSvt7b3flhtbQOanmP3R4U_V_9QB87kGc0t_H7iJBhMbolnK72YXMhinoDay9kcGqN4NqOv0D1Wil6dv71-9yLg_CmEEn8dEtL9ttPj_LnuciaqxXqjxvN5NiHhXp1w6kihxjkVBjWXS3eXtp1Se_5GNUltl-GoBhkbShvYBhvr0UT1PIv-UVcxmOCVxiYjoucqC2SjRyZLNKxbj7kARtWw-1Fh2aQjZkK38wv7o2Ut95M0rzQAeij4y-QCX0qsA_43NcZI1ha_L7bA3Pn0vkfQ2b9kW2avIQHQszgsrzN-d7v_WsceQhE7nCUq3g8mWIrnRg_juJzDcedUBn1Reuz6XVr=w657-h657-s-no?authuser=0" alt="Profile picture" height="300" width="300">
-		<p>Welcome to my website! I am a web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL. I am also proficient in using various frameworks such as Bootstrap, jQuery, and React. Below are links to my Github and LinkedIn profiles.</p>
-		<p>Github: <a href="https://github.com/rammuchhal" target="_blank">https://github.com/rammuchhal</a></p>
-		<p>LinkedIn: <a href="https://www.linkedin.com/in/ram-muchhal-4a771422b/" target="_blank">https://www.linkedin.com/in/ram-muchhal/</a></p>
-	</section>
+	<!-- <section id="profile"> -->
+		<!-- <h2>Profile</h2> -->
+
+		<div class="profile">
+
+			<div class="content">
+				
+				<p>Welcome to my website! I am a web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL. I am also proficient in using various frameworks such as Bootstrap, jQuery, and React. Below are links to my Github and LinkedIn profiles.</p>
+				<p>Github: <a href="https://github.com/rammuchhal" target="_blank">https://github.com/rammuchhal</a></p>
+				<p>LinkedIn: <a href="https://www.linkedin.com/in/ram-muchhal-4a771422b/" target="_blank">https://www.linkedin.com/in/ram-muchhal/</a></p>
+			</div>
+			<img src="https://lh3.googleusercontent.com/wu1nePcmIY77-Kw_W32Laf-dCCdSUKNwfS-R97qLGuIdk7zmopxRHXBdIqZcf6gjn9nfmDZ-_8rgjRObHgNcJ-t-f9jHzXqeFwvl-rMp5r01jXABCidyU4bOWhF0OqKvNocugLnQw_y4s_BiBPikiJK43Rzm9rRSKHSr0b97gA-8z-ikQYwx70MoAXmR4u-acpYiYn0EM_PP45O-biJm9laP6-tHfmRv01uG4Ah8MtzuIAU5w4ECaOaeMxGMLoiMcPN9gq1wR1O7MdttuQTZf7Z3J0zNQrNQksKtMMqq1DjI4tBYQJetYCAh2kTDUTx4w6zHpLWMClFqPRTCsAfTsA6iLv4lyUd7zL-R9SAd4fL_8ixwSBdh6TRQ52EqFci5pN8OUEfC0ZeGlWCAwxE4OdV5LKc_4JuihU5OP4e2lPqFtVMEyzAJtRHhvk9Bs8SOoFteX_YGadEPIVQMBaGHIu_R8yrzVOS1BjdMKRfuMS3lPjDSktMWVkWPbWeeL4XW2yJyTgKDS1HcDhCSuO6B2SlmTGzeiBNKV0LRIpYdHVx1H7PW95bhsPmAMXcjl4Tn7h4JPNDL7NjZU8w44QXSvt7b3flhtbQOanmP3R4U_V_9QB87kGc0t_H7iJBhMbolnK72YXMhinoDay9kcGqN4NqOv0D1Wil6dv71-9yLg_CmEEn8dEtL9ttPj_LnuciaqxXqjxvN5NiHhXp1w6kihxjkVBjWXS3eXtp1Se_5GNUltl-GoBhkbShvYBhvr0UT1PIv-UVcxmOCVxiYjoucqC2SjRyZLNKxbj7kARtWw-1Fh2aQjZkK38wv7o2Ut95M0rzQAeij4y-QCX0qsA_43NcZI1ha_L7bA3Pn0vkfQ2b9kW2avIQHQszgsrzN-d7v_WsceQhE7nCUq3g8mWIrnRg_juJzDcedUBn1Reuz6XVr=w657-h657-s-no?authuser=0" alt="Profile picture" height="300" width="300">
+		</div>
+	<!-- </section> -->
 	<section id="projects">
 		<h2>Projects</h2>
 		<div class="project">
@@ -166,22 +217,33 @@
                     <li>
                         <img src="https://news-cdn.softpedia.com/images/news2/ecmascript-2016-new-version-of-the-javascript-language-released-505625-2.jpg" alt="JavaScript" width="75" height="75">
                     </li>
+                    <br>
                     </p>
-                    <p> <h5>Back-end development</h5>
-                    <li>
-                        <img src="https://1.bp.blogspot.com/-Hx9Ca33ADs0/XYoFvLCIvHI/AAAAAAAABPI/lNZ0a_wjOWg9T19tTS10gAFSz3FgAzZMACLcBGAsYHQ/s1600/C-Programming-online-training-nareshit.jpg" alt="C" width="75" height="75">
-                    </li>
-                    <li>
-                        <img src="https://1.bp.blogspot.com/-g4tcgj4zNaw/XatRyQkZ-JI/AAAAAAAAIWk/BKR6OHbKU9A74CiCGXVyZ8AfLIqwQF4kACNcBGAsYHQ/w1200-h630-p-k-no-nu/cpp.png" alt="C++" width="75" height="75">
-                    </li>
-                    <li>
-                        <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/05/Python-language.png" alt="Python programming" width="75" height="75">
-                    </li>
-                    </p>
-                    <p> <h5>Database Management System</h5>
-                    <li>
-                        <img src="https://news.filehippo.com/wp-content/uploads/2014/09/learneveryday.net_.jpg" alt="MySQL" width="75" height="75">
-                    </li>
+					</ul>
+					<ul>
+
+						<p> <h5>Back-end development</h5>
+							<li>
+								<img src="https://1.bp.blogspot.com/-Hx9Ca33ADs0/XYoFvLCIvHI/AAAAAAAABPI/lNZ0a_wjOWg9T19tTS10gAFSz3FgAzZMACLcBGAsYHQ/s1600/C-Programming-online-training-nareshit.jpg" alt="C" width="75" height="75">
+							</li>
+							<li>
+								<img src="https://1.bp.blogspot.com/-g4tcgj4zNaw/XatRyQkZ-JI/AAAAAAAAIWk/BKR6OHbKU9A74CiCGXVyZ8AfLIqwQF4kACNcBGAsYHQ/w1200-h630-p-k-no-nu/cpp.png" alt="C++" width="75" height="75">
+							</li>
+							<li>
+								<img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/05/Python-language.png" alt="Python programming" width="75" height="75">
+							</li>
+							<br>
+						</p>
+					</ul>
+					<ul>
+
+						<p> <h5>Database Management System</h5>
+							<li>
+								<img src="https://news.filehippo.com/wp-content/uploads/2014/09/learneveryday.net_.jpg" alt="MySQL" width="75" height="75">
+							</li>
+						</ul>
+                <br>
+                </p>
                 </ul>
             </div>
 	<section id="cv">
