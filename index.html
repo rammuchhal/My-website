@@ -80,6 +80,43 @@
 			color: red;
 			text-decoration: underline;
 		}
+		#profile {
+			background-color: #f5f5f5;
+		}
+		#projects {
+			background-color: #e5e5e5;
+		}
+		#cv {
+			background-color: #d5d5d5;
+		}
+		form {
+			margin-top: 20px;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input, textarea {
+			width: 100%;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		#submitBtn {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+		}
+        
+		/* Animation */
+		.skill-image {
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.skill-image:hover {
+			transform: scale(1.2);
+		}
 	</style>
 </head>
 <body>
@@ -87,15 +124,19 @@
 		<h1>Ram Muchhal</h1>
 		<p>Web Developer</p>
 	</header>
-	<!-- <nav>
-		<a href="C:\Users\DC\Desktop\Python\cv.html">Look at CV</a>
-	</nav> -->
+	<nav>
+		<a href="#profile">Profile</a>
+		<a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+		<a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+	</nav>
 	<section id="profile">
 		<h2>Profile</h2>
-		<img src="https://lh3.googleusercontent.com/wu1nePcmIY77-Kw_W32Laf-dCCdSUKNwfS-R97qLGuIdk7zmopxRHXBdIqZcf6gjn9nfmDZ-_8rgjRObHgNcJ-t-f9jHzXqeFwvl-rMp5r01jXABCidyU4bOWhF0OqKvNocugLnQw_y4s_BiBPikiJK43Rzm9rRSKHSr0b97gA-8z-ikQYwx70MoAXmR4u-acpYiYn0EM_PP45O-biJm9laP6-tHfmRv01uG4Ah8MtzuIAU5w4ECaOaeMxGMLoiMcPN9gq1wR1O7MdttuQTZf7Z3J0zNQrNQksKtMMqq1DjI4tBYQJetYCAh2kTDUTx4w6zHpLWMClFqPRTCsAfTsA6iLv4lyUd7zL-R9SAd4fL_8ixwSBdh6TRQ52EqFci5pN8OUEfC0ZeGlWCAwxE4OdV5LKc_4JuihU5OP4e2lPqFtVMEyzAJtRHhvk9Bs8SOoFteX_YGadEPIVQMBaGHIu_R8yrzVOS1BjdMKRfuMS3lPjDSktMWVkWPbWeeL4XW2yJyTgKDS1HcDhCSuO6B2SlmTGzeiBNKV0LRIpYdHVx1H7PW95bhsPmAMXcjl4Tn7h4JPNDL7NjZU8w44QXSvt7b3flhtbQOanmP3R4U_V_9QB87kGc0t_H7iJBhMbolnK72YXMhinoDay9kcGqN4NqOv0D1Wil6dv71-9yLg_CmEEn8dEtL9ttPj_LnuciaqxXqjxvN5NiHhXp1w6kihxjkVBjWXS3eXtp1Se_5GNUltl-GoBhkbShvYBhvr0UT1PIv-UVcxmOCVxiYjoucqC2SjRyZLNKxbj7kARtWw-1Fh2aQjZkK38wv7o2Ut95M0rzQAeij4y-QCX0qsA_43NcZI1ha_L7bA3Pn0vkfQ2b9kW2avIQHQszgsrzN-d7v_WsceQhE7nCUq3g8mWIrnRg_juJzDcedUBn1Reuz6XVr=w657-h657-s-no?authuser=0" alt="Profile picture" height="300" width="300" alihn="center">
+		<img src="https://lh3.googleusercontent.com/wu1nePcmIY77-Kw_W32Laf-dCCdSUKNwfS-R97qLGuIdk7zmopxRHXBdIqZcf6gjn9nfmDZ-_8rgjRObHgNcJ-t-f9jHzXqeFwvl-rMp5r01jXABCidyU4bOWhF0OqKvNocugLnQw_y4s_BiBPikiJK43Rzm9rRSKHSr0b97gA-8z-ikQYwx70MoAXmR4u-acpYiYn0EM_PP45O-biJm9laP6-tHfmRv01uG4Ah8MtzuIAU5w4ECaOaeMxGMLoiMcPN9gq1wR1O7MdttuQTZf7Z3J0zNQrNQksKtMMqq1DjI4tBYQJetYCAh2kTDUTx4w6zHpLWMClFqPRTCsAfTsA6iLv4lyUd7zL-R9SAd4fL_8ixwSBdh6TRQ52EqFci5pN8OUEfC0ZeGlWCAwxE4OdV5LKc_4JuihU5OP4e2lPqFtVMEyzAJtRHhvk9Bs8SOoFteX_YGadEPIVQMBaGHIu_R8yrzVOS1BjdMKRfuMS3lPjDSktMWVkWPbWeeL4XW2yJyTgKDS1HcDhCSuO6B2SlmTGzeiBNKV0LRIpYdHVx1H7PW95bhsPmAMXcjl4Tn7h4JPNDL7NjZU8w44QXSvt7b3flhtbQOanmP3R4U_V_9QB87kGc0t_H7iJBhMbolnK72YXMhinoDay9kcGqN4NqOv0D1Wil6dv71-9yLg_CmEEn8dEtL9ttPj_LnuciaqxXqjxvN5NiHhXp1w6kihxjkVBjWXS3eXtp1Se_5GNUltl-GoBhkbShvYBhvr0UT1PIv-UVcxmOCVxiYjoucqC2SjRyZLNKxbj7kARtWw-1Fh2aQjZkK38wv7o2Ut95M0rzQAeij4y-QCX0qsA_43NcZI1ha_L7bA3Pn0vkfQ2b9kW2avIQHQszgsrzN-d7v_WsceQhE7nCUq3g8mWIrnRg_juJzDcedUBn1Reuz6XVr=w657-h657-s-no?authuser=0" alt="Profile picture" height="300" width="300">
 		<p>Welcome to my website! I am a web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL. I am also proficient in using various frameworks such as Bootstrap, jQuery, and React. Below are links to my Github and LinkedIn profiles.</p>
-		<p>Github: <a href="https://github.com/rammuchhal">https://github.com/rammuchhal</a></p>
-		<p>LinkedIn: <a href="https://www.linkedin.com/in/ram-muchhal-4a771422b/">https://www.linkedin.com/in/ram-muchhal/</a></p>
+		<p>Github: <a href="https://github.com/rammuchhal" target="_blank">https://github.com/rammuchhal</a></p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/ram-muchhal-4a771422b/" target="_blank">https://www.linkedin.com/in/ram-muchhal/</a></p>
 	</section>
 	<section id="projects">
 		<h2>Projects</h2>
@@ -103,16 +144,64 @@
 			<h3>Project 1</h3>
 			<p>Numerical Analysis and Design</p>
 			<ul>
-				<li><p><a href="https://youtu.be/qeoRXcFS2q0">Video of Internal 1 explaination</a></p></li>
-				<li><p><a href="https://youtu.be/_Mgmg-FzZT0">Video of Internal 2A explaination</a></p></li>
-				<li><p><a href="https://youtu.be/gbwqv6vIx30">Video of Internal 2B explaination</a></p></li>
+				<li><p><a href="https://youtu.be/qeoRXcFS2q0" target="_blank">Video of Internal 1 explanation</a></p></li>
+				<li><p><a href="https://youtu.be/_Mgmg-FzZT0" target="_blank">Video of Internal 2A explanation</a></p></li>
+				<li><p><a href="https://youtu.be/gbwqv6vIx30" target="_blank">Video of Internal 2B explanation</a></p></li>
+			</ul>
+            
 		</div>
 	</section>
-	<section id="CV">
+    <section id="skills">
+		<h2>Skills</h2>
+		<div class="skills">
+            <h3>Skills</h3>
+                <ul>
+                    <p> <h5>Front-end development</h5>
+                    <li>
+                        <img src="https://1.bp.blogspot.com/-NGHwBncyA68/UiMm_8b2ZUI/AAAAAAAAAnA/17OGXCKI4zE/s1600/Logo+HTML5.JPG" alt="HTML5" width="75" height="75">    
+                    </li>
+                    <li>
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="CSS3" width="75" height="75">
+                    </li>
+                    <li>
+                        <img src="https://news-cdn.softpedia.com/images/news2/ecmascript-2016-new-version-of-the-javascript-language-released-505625-2.jpg" alt="JavaScript" width="75" height="75">
+                    </li>
+                    </p>
+                    <p> <h5>Back-end development</h5>
+                    <li>
+                        <img src="https://1.bp.blogspot.com/-Hx9Ca33ADs0/XYoFvLCIvHI/AAAAAAAABPI/lNZ0a_wjOWg9T19tTS10gAFSz3FgAzZMACLcBGAsYHQ/s1600/C-Programming-online-training-nareshit.jpg" alt="C" width="75" height="75">
+                    </li>
+                    <li>
+                        <img src="https://1.bp.blogspot.com/-g4tcgj4zNaw/XatRyQkZ-JI/AAAAAAAAIWk/BKR6OHbKU9A74CiCGXVyZ8AfLIqwQF4kACNcBGAsYHQ/w1200-h630-p-k-no-nu/cpp.png" alt="C++" width="75" height="75">
+                    </li>
+                    <li>
+                        <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/05/Python-language.png" alt="Python programming" width="75" height="75">
+                    </li>
+                    </p>
+                    <p> <h5>Database Management System</h5>
+                    <li>
+                        <img src="https://news.filehippo.com/wp-content/uploads/2014/09/learneveryday.net_.jpg" alt="MySQL" width="75" height="75">
+                    </li>
+                </ul>
+            </div>
+	<section id="cv">
 		<h2>CV</h2>
 		<div class="CV">
-			<p><a href="cv.html">My CV</a></p>
+			<p><a href="cv.html" target="_blank">View my CV</a></p>
+            <p><a href="https://drive.google.com/file/d/1LHD-aBMZLqFhYRawcR2jr06B4gBal9wv/view?usp=sharing" download>Download my CV</a></p>   
 		</div>
 	</section>
-	</body>
-	</html>
+	<section id="contact">
+		<h2>Contact</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="suggestions">Suggestions:</label>
+			<textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+			<input type="submit" id="submitBtn" value="Submit">
+		</form>
+	</section>
+</body>
+</html>
